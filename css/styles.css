@@ -4,6 +4,10 @@
     --color-blue: #0b5ed7;
 }
 
+html{
+    scroll-padding-top: 30px;
+}
+
 body{
     font-family: var(--font-body);
     background-color: var(--color-default);
