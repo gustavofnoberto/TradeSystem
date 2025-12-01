@@ -29,60 +29,71 @@
 
 <body>
     <!--   Menu de navegação   -->
-        <nav class="navbar navbar-expand-lg mt-5 mb-2">
-            <div class="container">
-                <a class="navbar-brand logo" href="#"><i class="bi bi-arrow-repeat me-1"></i>Trade System</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Quem somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastrar Trocas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Buscar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"
-                            data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg mt-5 mb-2">
+        <div class="container">
+            <a class="navbar-brand logo" href="#"><i class="bi bi-arrow-repeat me-1"></i>Trade System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastrar Trocas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Faça seu login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formLogin" name="formLogin" method="get" action="">
 
+                        <div class="my-3">
+                            <label for="formEmail" class="form-label">Email</label>
+                            <input type="email" id="formEmail" name="formEmail" class="form-control"
+                                placeholder="Ex: emailteste@email.com"
+                                minlenght="3" maxlength="50" required>
+                        </div>
+
+                        <div class="my-3">
+                            <label for="forSenha" class="form-label">Senha</label>
+                            <input type="password" id="forSenha" name="formSenha" class="form-control" placeholder="Ex: !$ghu294" minlength="8" maxlength="20" required>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-lg">Efetuar Login >> </button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <!-- Fim menu de navegação e da modal-->
 
     <!-- Conteúdo principal -->
     <main class="container mb-5">
 
         <!-- hero da página -->
-         <section class="border rounderd">
+        <section class="border rounderd">
             <div class="row py-4 px-2 text-center d-flex align-items-center">
                 <figure class="col-md-6 my-3">
                     <img src="./images/app.svg" alt="Imagem do aplicativo" loading="lazy" class="img-fluid">
@@ -90,10 +101,13 @@
                 <div class="col-md-6 my-3">
                     <h2 class="text-blue mb-3">Troque tudo pela Internet</h2>
                     <p class="lead mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, iste.</p>
-                    <a href="#" class="btn btn-primary btn-lg">Baixar nosso aplicativo<i class="bi bi-cloud-arrow-down ms-2"></i></a>
+                    <a href="#" class="btn btn-primary btn-lg">Baixar nosso aplicativo<i
+                            class="bi bi-cloud-arrow-down ms-2"></i></a>
                 </div>
             </div>
-         </section>
+        </section>
+        <!-- Fim hero da página -->
+
 
     </main>
     <!-- Fim conteúdo principal -->
