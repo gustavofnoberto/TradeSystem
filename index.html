@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body> 
     <!--   Menu de navegação   -->
     <nav class="navbar navbar-expand-lg mt-5 mb-2">
         <div class="container">
@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#brinquedos">Brinquedos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastrar Trocas</a>
+                        <a class="nav-link" href="#cadastrarTrocas">Cadastrar Trocas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Buscar</a>
@@ -172,6 +172,60 @@
                 <!-- Fim 4o.Card -->
             </div>
         </section>
+        <!-- fim dos cards -->
+
+        <!-- Cadastrar Trocas -->
+        <section class="border rounderd my-5 p-4" id="cadastrarTrocas">
+            <h2 class="text-blue mb-3">Cadastrar Trocas</h2>
+
+            <form id="formCadastrar" name="formCadastrar" method="get" action="">
+
+                <div class="row">
+
+                    <div class="col-md-4 my-2">
+                        <label for="tituloAnuncio" class="form-label">Título do Anúncio</label>
+                        <input type="text" id="tituloAnuncio" name="tituloAnuncio" class="form-control" placeholder="Ex: Macacão Azul" minlength="10" maxlength="30" required>
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <label for="tipoProduto" class="form-label">Tipo de Produto</label>
+                        <select name="tipoProduto" id="tipoProduto" 
+                        class="form-select" required>
+                            <option value="" disabled selected>Selecione o produto:</option>
+                            <option value="">Produto 1</option>
+                            <option value="">Produto 2</option>
+                            <option value="">Produto 3</option>
+                            <option value="">Produto 4</option>
+                            <option value="">Produto 5</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <label for="dataCadastro" class="form-label">Data do Cadastro</label>
+                        <input type="date" id="dataCadastro" name="dataCadastro" class="form-control">
+                    </div>
+
+                    <div class="my-2">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea name="descricao" id="descricao" class="form-control" placeholder="Lindo macacão azul para crianças..." maxlength="250" required></textarea>
+                    </div>
+
+                    <div class="my-2">
+                        <label for="trocar" class="form-label">Gostaria de trocar por...</label>
+                        <textarea name="trocar" id="trocar" class="form-control" placeholder="Gostaria de trocar por..."
+                        maxlength="250" required></textarea>
+                    </div>
+
+                    <div class="my-3 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" name="btnCadastrar">Cadastrar troca >></button>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </section>
+        <!-- Fim cadastrar trocas -->
 
     </main>
     <!-- Fim conteúdo principal -->

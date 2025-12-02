@@ -34,3 +34,8 @@ body{
 .text-blue {
     color: var(--color-blue);
 }
+
+textarea {
+    height: 150px;
+    resize: none;
+}
