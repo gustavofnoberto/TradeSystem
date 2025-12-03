@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#cadastrarTrocas">Cadastrar Trocas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Buscar</a>
+                        <a class="nav-link" href="#buscar">Buscar</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</a>
@@ -226,6 +226,18 @@
             </form>
         </section>
         <!-- Fim cadastrar trocas -->
+
+        <!-- Área de busca -->
+         <section class="border rounderd my-5 p-4" id="buscar">
+            <h2 class="text-blue mb-3">Buscar suas trocas</h2>
+            <form id="form-busca" name="form-busca" method="get" action="">
+            <div class="d-flex">
+                <input type="search" id="textBusca" name="textBusca" placeholder="Quero buscar..." class="form-control" minlength="3" maxlength="30" required>
+                <button type="submit" class="btn btn-primary btn-lg ms-2">Pesquisar</button>
+            </div>
+            </form>
+         </section>
+        <!-- Fim área de busca -->
 
     </main>
     <!-- Fim conteúdo principal -->
