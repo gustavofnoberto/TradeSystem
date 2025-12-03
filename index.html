@@ -64,7 +64,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="formLogin" name="formLogin" method="get" action="">
+                    <form id="formLogin" name="formLogin" method="post" action="">
 
                         <div class="my-3">
                             <label for="formEmail" class="form-label">Email</label>
@@ -181,7 +181,7 @@
         <section class="border rounderd my-5 p-4" id="cadastrarTrocas">
             <h2 class="text-blue mb-3">Cadastrar Trocas</h2>
 
-            <form id="formCadastrar" name="formCadastrar" method="get" action="">
+            <form id="formCadastrar" name="formCadastrar" method="post" action="">
 
                 <div class="row">
 
@@ -235,13 +235,95 @@
         <!-- Área de busca -->
         <section class="border rounderd my-5 p-4" id="buscar">
             <h2 class="text-blue mb-3">Buscar suas trocas</h2>
-            <form id="form-busca" name="form-busca" method="get" action="">
+
+            <!-- Formulário de busca -->
+            <form id="form-busca" name="form-busca" method="post" action="">
                 <div class="d-flex">
                     <input type="search" id="textBusca" name="textBusca" placeholder="Quero buscar..."
                         class="form-control" minlength="3" maxlength="30" required>
                     <button type="submit" class="btn btn-primary btn-lg ms-2"> Pesquisar</button>
                 </div>
             </form>
+           <!-- Fim formulário de busca -->
+
+            <!-- Tabela para exibir os dados buscados -->
+            <h2 class="text-blue my-3">Resultado da busca</h2>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center align-middle">
+                    <!-- cabeçalho -->
+                     <thead class="table-primary">
+                        <tr>
+                            <th>Título troca</th>
+                            <th>Tipo de produto</th>
+                            <th>Data cadastro</th>
+                            <th>Descrição</th>
+                            <th>Trocado por</th>
+                            <th>Operação do sistema</th>
+                        </tr>
+                     </thead>
+
+                     <!-- Corpo da tabela - dados -->
+                     <tbody>
+                        <tr>
+                            <td>Macacão Azul</td>
+                            <td>Roupa</td>
+                            <td>03/12/2025</td>
+                            <td>Lindo macacão tamnho G - cor azul</td>
+                            <td>Brinquedo Novo</td>
+                            <td>
+                                <a href="#">Excluir </a> | <a href="#">Alterar</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Carrinho de Pedal</td>
+                            <td>Brinquedo</td>
+                            <td>30/11/2025</td>
+                            <td>Carrinho de pedal para crianças</td>
+                            <td>Jogo de videogame</td>
+                            <td>
+                                <a href="#">Excluir </a> | <a href="#">Alterar</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Macacão Amarelo</td>
+                            <td>Roupa</td>
+                            <td>014/02/2025</td>
+                            <td>Lindo macacão tamnho M - cor amarela</td>
+                            <td>Livro</td>
+                            <td>
+                                <a href="#">Excluir </a> | <a href="#">Alterar</a>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jogo de videogame </td>
+                            <td>jogo virtual</td>
+                            <td>03/06/2025</td>
+                            <td>jogo virtual para videogame</td>
+                            <td>carrinho de controle remoto</td>
+                            <td>
+                                <a href="#">Excluir </a> | <a href="#">Alterar</a>
+                            </td>
+                        </tr>
+                        
+                     </tbody>
+
+                     <!-- rodapé da tabela -->
+                     <tfoot>
+                        <tr>
+                            <td colspan="6">Busca realizada em: 03/12/2025</td>
+                        </tr>
+                     </tfoot>
+
+                </table>
+            </div>
+
+
+            <!-- Fim tabela para exibir os dados buscados -->
+
         </section>
         <!-- Fim área de busca -->
 
