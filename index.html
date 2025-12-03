@@ -27,7 +27,7 @@
 
 </head>
 
-<body> 
+<body>
     <!--   Menu de navegação   -->
     <nav class="navbar navbar-expand-lg mt-5 mb-2">
         <div class="container">
@@ -117,7 +117,8 @@
                 <!-- 1o.Card -->
                 <div class="col my-2">
                     <div class="card">
-                        <img src="./images/brinquedo1.jpg" class="card-img-top" alt="Brinquedo do Snoopy" loading="lazy">
+                        <img src="./images/brinquedo1.jpg" class="card-img-top" alt="Brinquedo do Snoopy"
+                            loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Blocos do Snoop</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -131,7 +132,8 @@
                 <!-- 2o.Card -->
                 <div class="col my-2">
                     <div class="card">
-                        <img src="./images/brinquedo2.jpg" class="card-img-top" alt="caminhão bitoneira na cor amarela" loading="lazy">
+                        <img src="./images/brinquedo2.jpg" class="card-img-top" alt="caminhão bitoneira na cor amarela"
+                            loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Betoneira</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -159,7 +161,8 @@
                 <!-- 4o.Card -->
                 <div class="col my-2">
                     <div class="card">
-                        <img src="./images/brinquedo4.jpg" class="card-img-top" alt="Boneco da galinha pintadinha" loading="lazy">
+                        <img src="./images/brinquedo4.jpg" class="card-img-top" alt="Boneco da galinha pintadinha"
+                            loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Galinha pintadinha</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -184,13 +187,13 @@
 
                     <div class="col-md-4 my-2">
                         <label for="tituloAnuncio" class="form-label">Título do Anúncio</label>
-                        <input type="text" id="tituloAnuncio" name="tituloAnuncio" class="form-control" placeholder="Ex: Macacão Azul" minlength="10" maxlength="30" required>
+                        <input type="text" id="tituloAnuncio" name="tituloAnuncio" class="form-control"
+                            placeholder="Ex: Macacão Azul" minlength="10" maxlength="30" required>
                     </div>
 
                     <div class="col-md-4 my-2">
                         <label for="tipoProduto" class="form-label">Tipo de Produto</label>
-                        <select name="tipoProduto" id="tipoProduto" 
-                        class="form-select" required>
+                        <select name="tipoProduto" id="tipoProduto" class="form-select" required>
                             <option value="" disabled selected>Selecione o produto:</option>
                             <option value="">Produto 1</option>
                             <option value="">Produto 2</option>
@@ -207,17 +210,19 @@
 
                     <div class="my-2">
                         <label for="descricao" class="form-label">Descrição</label>
-                        <textarea name="descricao" id="descricao" class="form-control" placeholder="Lindo macacão azul para crianças..." maxlength="250" required></textarea>
+                        <textarea name="descricao" id="descricao" class="form-control"
+                            placeholder="Lindo macacão azul para crianças..." maxlength="250" required></textarea>
                     </div>
 
                     <div class="my-2">
                         <label for="trocar" class="form-label">Gostaria de trocar por...</label>
                         <textarea name="trocar" id="trocar" class="form-control" placeholder="Gostaria de trocar por..."
-                        maxlength="250" required></textarea>
+                            maxlength="250" required></textarea>
                     </div>
 
                     <div class="my-3 d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary btn-lg" id="btnCadastrar" name="btnCadastrar">Cadastrar troca >></button>
+                        <button type="submit" class="btn btn-primary btn-lg" id="btnCadastrar"
+                            name="btnCadastrar">Cadastrar troca >></button>
                     </div>
 
                 </div>
@@ -228,19 +233,33 @@
         <!-- Fim cadastrar trocas -->
 
         <!-- Área de busca -->
-         <section class="border rounderd my-5 p-4" id="buscar">
+        <section class="border rounderd my-5 p-4" id="buscar">
             <h2 class="text-blue mb-3">Buscar suas trocas</h2>
             <form id="form-busca" name="form-busca" method="get" action="">
-            <div class="d-flex">
-                <input type="search" id="textBusca" name="textBusca" placeholder="Quero buscar..." class="form-control" minlength="3" maxlength="30" required>
-                <button type="submit" class="btn btn-primary btn-lg ms-2">Pesquisar</button>
-            </div>
+                <div class="d-flex">
+                    <input type="search" id="textBusca" name="textBusca" placeholder="Quero buscar..."
+                        class="form-control" minlength="3" maxlength="30" required>
+                    <button type="submit" class="btn btn-primary btn-lg ms-2"> Pesquisar</button>
+                </div>
             </form>
-         </section>
+        </section>
         <!-- Fim área de busca -->
 
     </main>
     <!-- Fim conteúdo principal -->
+
+
+
+    <!-- rodapé da página -->
+    <footer class="bg-blue p-5 text-center text-light">
+        <h3 class="my-4">Trade System - Todos os direitos reservados - 2025</h3>
+        <div class="">
+            <a href="#"><i class="bi bi-twitter-x text-light fs-3 mx-2"></i></a>
+            <a href="#"><i class="bi bi-youtube text-light fs-3 mx-2"></i></i></a>
+            <a href="#"><i class="bi bi-instagram text-light fs-3 mx-2"></i></i></a>
+            <a href="#"><i class="bi bi-discord text-light fs-3 mx-2"></i></a>
+        </div>
+    </footer>
 
 
 

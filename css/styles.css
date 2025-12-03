@@ -35,6 +35,10 @@ body{
     color: var(--color-blue);
 }
 
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
 textarea {
     height: 150px;
     resize: none;
